@@ -3,8 +3,8 @@
     <!-- Hero Section -->
     <div class="my-section-wrapper text-center my-12">
       <div class="flex items-center justify-center gap-2">
-        <UIcon name="tabler:bolt" class="text-xl text-primary" />
-        <h1 class="font-bold">Lerax</h1>
+        <UIcon name="tabler:bolt" class="text-2xl text-primary" />
+        <h1 class="font-bold">lerax</h1>
       </div>
       <p class="text-lg">
         Dasturlashni o‘zbek tilida namunalar bilan o‘rganing
