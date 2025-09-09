@@ -1,3 +1,4 @@
+---
 title: VueJS - lerax
 summary: Dasturlash tilini o'zbek tilida namunalar bilan o'rganish
 date: 2025-09-29
