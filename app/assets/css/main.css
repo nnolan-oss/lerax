@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Define custom theme with accessible fonts and colors */
+@theme {
+    /* Fonts: Prioritize system fonts for performance, fallback to JetBrains Mono */
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'JetBrains Mono', monospace, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Updated cyan color palette with better contrast and vibrancy */
+    --color-cyan-50: #F0FAFF;  /* Lighter for backgrounds */
+    --color-cyan-100: #E0F5FF;
+    --color-cyan-200: #B8E8FF;
+    --color-cyan-300: #80D8FF;
+    --color-cyan-400: #40C4FF;
+    --color-cyan-500: #00A8E8;  /* Primary cyan */
+    --color-cyan-600: #0088C2;
+    --color-cyan-700: #006A9C;
+    --color-cyan-800: #005075;
+    --color-cyan-900: #003A55;
+    --color-cyan-950: #002638;  /* Darkest for text/icons */
+    /* Semantic UI color mappings for consistency */
+    --ui-color-primary-500: var(--color-cyan-500);
+    --ui-color-primary-400: var(--color-cyan-400);
+    --ui-color-secondary-500: #6B7280; /* Neutral gray for secondary */
+    --ui-color-secondary-400: #9CA3AF;
+    --ui-color-success-500: #10B981; /* Green for success */
+    --ui-color-success-400: #34D399;
+    --ui-color-info-500: #3B82F6; /* Blue for info */
+    --ui-color-info-400: #60A5FA;
+    --ui-color-warning-500: #F59E0B; /* Amber for warning */
+    --ui-color-warning-400: #FBBF24;
+    --ui-color-error-500: #EF4444; /* Red for error */
+    --ui-color-error-400: #F87171;
+}
+
+/* Light mode defaults */
+:root {
+    --ui-primary: var(--ui-color-primary-500);
+    --ui-secondary: var(--ui-color-secondary-500);
+    --ui-success: var(--ui-color-success-500);
+    --ui-info: var(--ui-color-info-500);
+    --ui-warning: var(--ui-color-warning-500);
+    --ui-error: var(--ui-color-error-500);
+
+    /* Additional variables for better Tailwind integration */
+    --background: #FFFFFF;
+    --text: var(--color-cyan-950);
+    --border: var(--color-cyan-200);
+}
+
+/* Dark mode adjustments */
+.dark {
+    --ui-primary: var(--ui-color-primary-400);
+    --ui-secondary: var(--ui-color-secondary-400);
+    --ui-success: var(--ui-color-success-400);
+    --ui-info: var(--ui-color-info-400);
+    --ui-warning: var(--ui-color-warning-400);
+    --ui-error: var(--ui-color-error-400);
+
+    /* Dark mode specific overrides */
+    --background: var(--color-cyan-950);
+    --text: var(--color-cyan-50);
+    --border: var(--color-cyan-800);
+}
