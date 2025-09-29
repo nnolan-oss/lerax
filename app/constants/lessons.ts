@@ -1,15 +1,5 @@
-export const golang = {
-  title: "Golang",
-  topics: [
-    {
-      title: "Biz nima qila olamiz",
-      link: "/examples/golang/about",
-    }
-  ]
-}
-
 export const lessons = [
-  { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang", content: golang },
+  { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang" },
   { title: "NuxtJS", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
   { title: "Vue", icon: "tabler:brand-vue", link: "/examples/vue" },
   { title: "JavaScript", icon: "tabler:brand-javascript", link: "/examples/javascript" },

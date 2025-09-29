@@ -9,6 +9,10 @@ const props = defineProps({
 const handleReload = () => {
   window.location.reload()
 }
+
+const handleGoBack = () => {
+  window.history.back()
+}
 </script>
 
 <template>
@@ -17,7 +21,7 @@ const handleReload = () => {
       <h1>{{ error?.statusCode }}</h1>
       <p>{{ error?.statusCode === 404 ? "Yaxshiroq qidiring" : "Menimcha nimadir neto" }}</p>
       <div class="flex items-center justify-center gap-2">
-        <UButton icon="tabler:chevron-left" href="/" variant="soft">Uyingga bor!</UButton>
+        <UButton icon="tabler:chevron-left" @click="handleGoBack" variant="soft">Uyingga bor!</UButton>
         <UButton icon="tabler:reload" @click="handleReload">Qayta yuklash</UButton>
       </div>
     </div>
