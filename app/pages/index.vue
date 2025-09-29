@@ -1,6 +1,6 @@
 <template>
   <div class="my-container">
-    <div class="my-section-wrapper text-center">
+    <div class="my-section-wrapper text-center my-12">
       <div class="flex items-center justify-center gap-2">
         <UIcon name="tabler:bolt" class="text-xl text-primary"/>
         <h2>
@@ -10,15 +10,15 @@
       <p>Dasturlashni namunalar bilan o'rganing</p>
     </div>
 
-    <div class="my-section-wrapper mt-12">
+    <div class="my-section-wrapper">
       <h5>· Sizni kutyapti</h5>
       <div class="grid grid-cols-2 gap-5 mt-4">
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
               v-if="lesson.link"
-              class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2">
-            :href="lesson.link"
-            <UIcon :name="lesson.icon" class="text-3xl"/>
+              :href="lesson.link"
+              class="hover:text-primary backdrop-blur bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2">
+            <UIcon :name="lesson.icon" class="text-3xl stroke-1"/>
             <h4 class="font-bold">{{ lesson.title }}</h4>
           </NuxtLink>
         </template>

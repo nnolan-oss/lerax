@@ -1,6 +1,6 @@
 export const lessons = [
   { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang" },
-  { title: "Nuxt", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
+  { title: "NuxtJS", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
   { title: "Vue", icon: "tabler:brand-vue", link: "/examples/vue" },
   { title: "JavaScript", icon: "tabler:brand-javascript", link: "/examples/javascript" },
   { title: "TypeScript", icon: "tabler:brand-typescript", link: "/examples/typescript" },
@@ -9,4 +9,7 @@ export const lessons = [
   { title: "NextJS", icon: "tabler:brand-nextjs", link: "/examples/nextjs" },
   { title: "PHP", icon: "tabler:brand-php", link: "/examples/php" },
   { title: "Laravel", icon: "tabler:brand-laravel", link: "/examples/laravel" },
+  { title: "Git", icon: "tabler:brand-git", link: "/examples/git" },
+  { title: "NodeJS", icon: "tabler:brand-nodejs", link: "/examples/nodejs" },
+  { title: "Telegram Bot", icon: "tabler:brand-telegram", link: "/examples/telegram-bot" },
 ] as const;
