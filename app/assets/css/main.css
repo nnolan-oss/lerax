@@ -43,7 +43,7 @@
     --ui-warning: var(--ui-color-warning-500);
     --ui-error: var(--ui-color-error-500);
 
-    --background: #FFFFFF;
+    --background: #F8F7F6;
     --text: var(--color-cyan-950);
     --border: var(--color-cyan-200);
 }
