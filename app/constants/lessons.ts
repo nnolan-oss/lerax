@@ -1,5 +1,15 @@
+export const golang = {
+  title: "Golang",
+  topics: [
+    {
+      title: "Biz nima qila olamiz",
+      link: "/examples/golang/about",
+    }
+  ]
+}
+
 export const lessons = [
-  { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang" },
+  { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang", content: golang },
   { title: "NuxtJS", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
   { title: "Vue", icon: "tabler:brand-vue", link: "/examples/vue" },
   { title: "JavaScript", icon: "tabler:brand-javascript", link: "/examples/javascript" },
@@ -13,3 +23,4 @@ export const lessons = [
   { title: "NodeJS", icon: "tabler:brand-nodejs", link: "/examples/nodejs" },
   { title: "Telegram Bot", icon: "tabler:brand-telegram", link: "/examples/telegram-bot" },
 ] as const;
+
