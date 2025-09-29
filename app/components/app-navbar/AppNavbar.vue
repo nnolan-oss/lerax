@@ -7,7 +7,9 @@
         <span class="text-primary">}</span>
       </NuxtLink>
       <div class="space-x-2 flex items-center">
+
         <UButton>Docs</UButton>
+        <ToggleMode/>
         <UButton icon="tabler:brand-github" size="md" color="primary" variant="soft"/>
       </div>
     </div>
