@@ -4,7 +4,7 @@ const {data: post} = await useAsyncData(`examples-${exampleId}`, () => {
   return queryCollection('examples').path(`/examples/${exampleId}`).first()
 })
 
-if (!post) {
+if (!post?.value) {
   throw createError({
     statusCode: 404,
     statusMessage: 'Page Not Found',
