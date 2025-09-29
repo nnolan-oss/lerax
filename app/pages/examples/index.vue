@@ -1,23 +1,14 @@
 <template>
   <div class="my-container">
     <div class="my-section-wrapper text-center">
-      <div class="flex items-center justify-center gap-2">
-        <UIcon name="tabler:bolt" class="text-xl text-primary"/>
-        <h2>
-          lerax
-        </h2>
-      </div>
-      <p>Dasturlashni namunalar bilan o'rganing</p>
-    </div>
-
-    <div class="my-section-wrapper mt-12">
-      <h5>· Sizni kutyapti</h5>
+      <h3 class="text-center">Bizda bor</h3>
+      <UInput v-model="value" placeholder="Qidiruv..." icon="tabler:search" class="min-w-[80%] my-4"/>
       <div class="grid grid-cols-2 gap-5 mt-4">
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
               v-if="lesson.link"
+              :href="lesson.link"
               class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2">
-            :href="lesson.link"
             <UIcon :name="lesson.icon" class="text-3xl"/>
             <h4 class="font-bold">{{ lesson.title }}</h4>
           </NuxtLink>
@@ -27,5 +18,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import {lessons} from "~/constants/lessons"
+import {lessons} from "~/constants/lessons";
+
+const value = ref('')
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="my-container">
-    id {{ route.params.lessonId }}
+    id {{ route.params.exampleId }}
   </div>
 </template>
 
