@@ -1,10 +1,10 @@
 <template>
-  <div>
-    Footer cc
+  <div class="border-t border-t-primary-500/10">
+    <div class="my-container">
+      {{date.getFullYear()}} · by <a href="https://nolan.uz" class="underline" target="_blank">nnolan</a>
+    </div>
   </div>
 </template>
-
-
-<style lang="scss" scoped>
-
-</style>
+<script setup lang="ts">
+  const date = new Date();
+</script>

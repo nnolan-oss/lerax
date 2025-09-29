@@ -43,7 +43,6 @@
     --ui-warning: var(--ui-color-warning-500);
     --ui-error: var(--ui-color-error-500);
 
-    /* Additional variables for better Tailwind integration */
     --background: #FFFFFF;
     --text: var(--color-cyan-950);
     --border: var(--color-cyan-200);
@@ -62,4 +61,40 @@
     --background: var(--color-cyan-950);
     --text: var(--color-cyan-50);
     --border: var(--color-cyan-800);
+}
+
+* {
+    font-family: var(--font-mono);
+}
+
+body {
+    background: var(--background);
+}
+
+.my-container {
+    @apply max-w-2xl mx-auto p-4;
+}
+
+h1{
+    @apply text-3xl;
+}
+
+h2{
+    @apply text-2xl;
+}
+
+h3{
+    @apply text-xl;
+}
+
+h4{
+    @apply text-lg;
+}
+
+p{
+    @apply text-base;
+}
+
+.my-section-wrapper{
+    @apply py-4;
 }
