@@ -7,7 +7,6 @@
         <span class="text-primary">}</span>
       </NuxtLink>
       <div class="space-x-2 flex items-center">
-
         <UButton href="/examples">Examples</UButton>
         <ToggleMode/>
         <UButton icon="tabler:brand-github" size="md" color="primary" variant="soft"/>

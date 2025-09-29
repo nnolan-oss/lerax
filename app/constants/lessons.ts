@@ -12,5 +12,6 @@ export const lessons = [
   { title: "Git", icon: "tabler:brand-git", link: "/examples/git" },
   { title: "NodeJS", icon: "tabler:brand-nodejs", link: "/examples/nodejs" },
   { title: "Telegram Bot", icon: "tabler:brand-telegram", link: "/examples/telegram-bot" },
+  { title: "React Native", icon: "tabler:brand-react-native", link: "/examples/react-native" },
 ] as const;
 
