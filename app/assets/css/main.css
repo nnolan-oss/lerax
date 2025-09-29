@@ -113,6 +113,10 @@ a.link {
   @apply text-xl relative my-4 ps-4;
 }
 
+.my-md-content pre{
+  @apply p-2 my-4 bg-primary/10 rounded-xl;
+}
+
 .my-section-tag:hover:before {
   content: "#";
   @apply absolute top-0 left-0 text-primary rounded;
