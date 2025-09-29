@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type {NuxtError} from '#app'
+const router = useRouter()
 
 const props = defineProps({
   // eslint-disable-next-line vue/require-default-prop
@@ -11,7 +12,7 @@ const handleReload = () => {
 }
 
 const handleGoBack = () => {
-  window.history.back()
+  router.back()
 }
 </script>
 

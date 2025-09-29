@@ -2,7 +2,7 @@
   <div class="my-container">
     <div class="my-section-wrapper text-center">
       <h3 class="text-center">Bizda bor</h3>
-      <UInput v-model="value" placeholder="Qidiruv..." icon="tabler:search" class="min-w-[80%] my-4"/>
+      <AppSearchInput/>
       <div class="grid grid-cols-2 gap-5 mt-4">
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
@@ -17,8 +17,8 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import {lessons} from "~/constants/lessons";
 
-const value = ref('')
+<script setup lang="ts">
+import AppSearchInput from "~/components/app-search-input/AppSearchInput.vue";
+import {lessons} from "~/constants/lessons";
 </script>
