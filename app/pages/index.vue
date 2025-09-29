@@ -11,11 +11,11 @@
     </div>
 
     <div class="my-section-wrapper mt-12">
-      <h3>- Sizni kutyapti</h3>
+      <h4>- Sizni kutyapti</h4>
       <div class="grid grid-cols-2 gap-5 mt-4">
-        <div class="bg-primary-500/10 p-4 rounded-xl text-center">
+        <NuxtLink href="/lessons/golang" class="bg-primary-500/10 p-4 rounded-xl text-center">
           <UIcon name="tabler:brand-golang" class="text-5xl"/>
-        </div>
+        </NuxtLink>
         <div class="bg-primary-500/10 p-4 rounded-xl text-center">
           <UIcon name="tabler:brand-nuxt" class="text-5xl"/>
         </div>
