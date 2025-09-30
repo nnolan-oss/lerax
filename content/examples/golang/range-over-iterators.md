@@ -1,10 +1,10 @@
 ---
-title: Iteratorlar (Go 1.23+)
-summary: Go 1.23+ iteratorlarni qo'llab-quvvatlaydi — deyarli har narsani range bilan aylanish mumkin.
+title: Range over Iterators (Go 1.23+)
+summary: Go 1.23+ iteratorlari bilan istalgan oqim ustida range qilish.
 date: 2025-09-30
 ---
 
-## Iteratorlar
+## Range over Iterators
 
 <div class="my-md-content">
 Go 1.23 versiyasidan boshlab iteratorlar qo'llab-quvvatlanadi. Bu yordamida deyarli har qanday oqim ustida `range` qilish mumkin.
