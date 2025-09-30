@@ -12,13 +12,13 @@ To'liq ma'lumot olish uchun <a class="link" href="https://go.dev/doc/tutorial/ge
 <h3 class="my-section-tag">Mavzular</h3>
 
 - [Hello World](./golang/hello-world)
-- [Values](./golang/values)
-- [Variables](./golang/variables)
-- [Constants](./golang/constants)
+- [Qiymatlar(Values)](./golang/values)
+- [O'zgaruvchilar(Variables)](./golang/variables)
+- [O'zgarmaslar(Constants)](./golang/constants)
 - [For](./golang/for)
 - [If/Else](./golang/if-else)
 - [Switch](./golang/switch)
-- [Arrays](./golang/arrays)
+- [Massivlar(Arrays)](./golang/arrays)
 - [Slices](./golang/slices)
 - [Maps](./golang/maps)
 - [Functions](./golang/functions)
