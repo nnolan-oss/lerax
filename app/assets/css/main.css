@@ -113,7 +113,7 @@ a.link {
   @apply text-xl relative my-4 ps-4;
 }
 
-.my-md-content pre{
+.my-md-content pre {
   @apply border-l-2 border-primary rounded-l-none p-2 my-4 bg-primary/10 rounded-xl whitespace-pre-wrap wrap-break-word;
 }
 

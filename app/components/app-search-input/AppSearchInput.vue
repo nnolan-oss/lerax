@@ -32,6 +32,6 @@ const updateQuery = () => {
 const handleSearch = useDebounceFn(updateQuery, 400)
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

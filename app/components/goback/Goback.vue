@@ -6,7 +6,7 @@
       variant="soft"
       >Ortga</UButton
     >
-    <UIcon :title="exampleId.toUpperCase()" :name="'tabler:brand-'+exampleId" class="text-3xl"/>
+    <UIcon :title="exampleId?.toUpperCase()" :name="'tabler:brand-'+exampleId" class="text-3xl"/>
   </div>
 </template>
 

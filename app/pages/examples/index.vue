@@ -33,7 +33,7 @@ interface Lesson {
 }
 
 const route = useRoute();
-const searchQuery = ref<string>(route.params.search as string || '');
+const searchQuery = ref<string>((route.query.search as string) || '');
 
 const filteredLessons = computed(() => {
   if (!searchQuery.value) {
