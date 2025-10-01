@@ -6,6 +6,7 @@ date: 2025-09-29
 
 ## Golang
 
+<div class="my-md-content">
 <a class="link" href="https://go.dev">Go</a> kengaytiriladigan, xavfsiz va ishonchli dasturiy ta'minotni yaratish uchun mo'ljallangan ochiq kodli dasturlash tili.
 To'liq ma'lumot olish uchun <a class="link" href="https://go.dev/doc/tutorial/getting-started">dokumentatsiya</a>
 
@@ -95,3 +96,4 @@ To'liq ma'lumot olish uchun <a class="link" href="https://go.dev/doc/tutorial/ge
 - [Exec'ing Processes](./golang/execing-processes)
 - [Signals](./golang/signals)
 - [Exit](./golang/exit)
+</div>
