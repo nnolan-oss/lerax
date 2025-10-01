@@ -53,6 +53,8 @@ export default defineNuxtConfig({
             "tsx",
             "python",
             "dart",
+            "vue",
+            "vue-html"
           ],
           theme: {
             // Default theme (same as single string)
