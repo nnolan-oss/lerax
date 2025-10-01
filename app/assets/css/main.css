@@ -110,7 +110,7 @@ a.link {
 }
 
 .my-section-tag {
-  @apply text-xl relative my-4 ps-4;
+  @apply text-xl relative mb-4 mt-8 ps-4;
 }
 
 .my-section-tag:before {
