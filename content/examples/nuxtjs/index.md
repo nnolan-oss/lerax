@@ -6,6 +6,7 @@ date: 2025-09-29
 
 ## NuxtJS
 
+<div class="my-md-content">
 [Nuxt](https://nuxt.com) yuqori sifatli full-stack web loyihalarni yaratish uchun ishlab chiqilgan Vue.js frameworki.  
 To'liq ma'lumot olish uchun [dokumentatsiya](https://nuxt.com/docs/4.x/getting-started/installation).
 
@@ -39,3 +40,4 @@ To'liq ma'lumot olish uchun [dokumentatsiya](https://nuxt.com/docs/4.x/getting-s
 - [Configuration](./nuxtjs/configuration)
 - [Deployment](./nuxtjs/deployment)
 - [Testing](./nuxtjs/testing)
+</div>

@@ -4,7 +4,7 @@
     <div class="my-section-wrapper text-center my-12">
       <div class="flex items-center justify-center gap-2">
         <UIcon name="tabler:bolt" class="text-xl text-primary" />
-        <h1 class="text-2xl font-bold">Lerax</h1>
+        <h1 class="font-bold">Lerax</h1>
       </div>
       <p class="text-lg">
         Dasturlashni o‘zbek tilida namunalar bilan o‘rganing
@@ -13,7 +13,7 @@
 
     <!-- Lessons Section -->
     <div class="my-section-wrapper">
-      <h2 class="text-xl font-semibold">· Sizni kutyapti</h2>
+      <h5 class="font-semibold">· Sizni kutyapti</h5>
       <div class="grid grid-cols-2 gap-5 mt-4">
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
