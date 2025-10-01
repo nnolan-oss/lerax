@@ -1,1 +1,57 @@
-Planda bor ;)
+---
+title: Nix
+summary: Dasturlash tilini o'zbek tilida namunalar bilan o'rganish
+date: 2025-10-01
+---
+
+## Nix
+
+<div class="my-md-content">
+
+[Nix](https://nixos.org) — declarative va reproducible development muhiti yaratish uchun ishlab chiqilgan package manager.  
+To'liq ma'lumot olish uchun [dokumentatsiya](https://nixos.org/learn.html).
+
+<h3 class="my-section-tag">Mavzular</h3>
+
+- [Hello World](./nix/hello-world)
+- [Nix package manager](./nix/package-manager)
+- [nix-env](./nix/nix-env)
+- [nix-shell](./nix/nix-shell)
+
+- [Nix skriptlash](./nix/scripting)
+  - [O'zgaruvchilar](./nix/variables)
+  - [Ma'lumot turlari](./nix/data-types)
+  - [If/else](./nix/if-else)
+  - [Switch](./nix/switch)
+  - [Funksiyalar](./nix/functions)
+  - [Modullar](./nix/modules)
+  - [Import/export](./nix/import-export)
+  - [Inheritance (me'ros olish)](./nix/inheritance)
+  - [nixpkgs](./nix/nixpkgs)
+  - [Overlays & package override](./nix/overlays)
+  - [Packagelarni localda build qilish](./nix/local-build)
+  - [Custom package yozish](./nix/custom-package)
+
+- [Flakes](./nix/flakes)
+- [Outputs & inputs](./nix/outputs-inputs)
+- [nix develop & nix run](./nix/develop-run)
+- [DevShell yaratish](./nix/devshell)
+
+- [direnv & nix-direnv](./nix/direnv)
+- [Language-specific dev environment](./nix/lang-env)
+
+- [NixOS](./nixos/intro)
+  - [Declarative konfiguratsiya](./nixos/declarative-config)
+  - [configuration.nix & hardware-configuration.nix](./nixos/config-files)
+  - [home-manager](./nixos/home-manager)
+  - [System rebuild va rollback](./nixos/rebuild-rollback)
+
+- [Advanced Topics](./nix/advanced)
+  - [Cachix va binary cache](./nix/cachix)
+  - [CI/CD da Nix ishlatish](./nix/ci-cd)
+  - [Reproducible build’lar](./nix/reproducible-builds)
+  - [Multi-user va remote build’lar](./nix/multi-user-remote)
+
+- [Resurslar](./nix/resources)
+
+</div>
