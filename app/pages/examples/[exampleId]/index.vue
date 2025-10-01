@@ -14,9 +14,9 @@ if (!post?.value) {
 const { title, summary, date } = post.value
 
 useSeoMeta({
-  title,
+  title: `${title} - Lerax`,
   description: summary,
-  ogTitle: title,
+  ogTitle: `${title} - Lerax`,
   ogDescription: summary,
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
