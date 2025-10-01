@@ -11,6 +11,17 @@ if (!post?.value) {
   })
 }
 
+const { title, summary, date } = post.value
+
+useSeoMeta({
+  title,
+  description: summary,
+  ogTitle: title,
+  ogDescription: summary,
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
+
 </script>
 
 <template>

@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup>
 const route = useRoute()
-const exampleId = route.params.exampleId as string
-const topicId = route.params.topicId as string
+const exampleId = route.params?.exampleId
+const topicId = route.params?.topicId
 
 const { data: post } = await useAsyncData(
   `examples-${exampleId}-${topicId}`,
@@ -14,6 +14,18 @@ if (!post?.value) {
     statusMessage: 'Page Not Found',
   })
 }
+
+const { title, summary, date } = post.value
+
+useSeoMeta({
+  title,
+  description: summary,
+  ogTitle: title,
+  ogDescription: summary,
+  ogImage: 'https://example.com/image.png',
+  twitterCard: 'summary_large_image',
+})
+
 </script>
 
 <template>

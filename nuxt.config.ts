@@ -7,6 +7,36 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   vite: { plugins: [tailwindcss()], },
 
+  app: {
+    head: {
+      title: 'lerax',
+      meta: [
+        { name: 'description', content: 'lerax' },
+        { name: 'keywords', content: 'lerax, dasturlash, namuna, kod' },
+        { name: 'author', content: 'nnolan' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
+        { name: 'generator', content: 'Nuxt.js' },
+        { name: 'apple-mobile-web-app-capable', content: 'yes' },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
+        { name: 'apple-mobile-web-app-title', content: 'lerax' },
+        { name: 'theme-color', content: '#00a8e8' },
+        { name: 'msapplication-TileColor', content: '#00a8e8' },
+        { name: 'msapplication-TileImage', content: '/favicon.ico' },
+        { name: 'msapplication-config', content: '/browserconfig.xml' },
+        { name: 'msapplication-tap-highlight', content: 'no' },
+        { name: 'format-detection', content: 'telephone=no, email=no' },
+        { name: 'google', content: 'notranslate' },
+        { name: 'googlebot', content: 'notranslate' },
+        { name: 'googlebot-news', content: 'notranslate' },
+        { name: 'googlebot-news', content: 'notranslate' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    }
+  },
+
   content: {
     build: {
       markdown: {

@@ -1,30 +1,35 @@
 <template>
   <div class="my-container">
     <div class="my-section-wrapper text-center">
-      <h3 class="text-center">Nima o'rganamiz ?</h3>
-      <AppSearchInput v-model="searchQuery" placeholder="Qidiruv..."/>
-      <div v-if="filteredLessons.length > 0" class="grid grid-cols-2 gap-5 mt-4">
+      <h1 class="text-2xl font-bold mb-4">Dasturlash namunalarini o‘rganing</h1>
+      <AppSearchInput v-model="searchQuery" placeholder="Qidiruv..." />
+
+      <div
+        v-if="filteredLessons.length > 0"
+        class="grid grid-cols-2 gap-5 mt-4"
+      >
         <NuxtLink
-            v-for="lesson in filteredLessons"
-            :key="lesson.title"
-            :to="lesson.link"
-            class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
+          v-for="lesson in filteredLessons"
+          :key="lesson.title"
+          :to="lesson.link"
+          class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
         >
-          <UIcon :name="lesson.icon" class="text-3xl"/>
-          <h4 class="font-bold">{{ lesson.title }}</h4>
+          <UIcon :name="lesson.icon" class="text-3xl" />
+          <h2 class="font-bold text-lg">{{ lesson.title }}</h2>
         </NuxtLink>
       </div>
+
       <div v-else class="mt-4 text-gray-500">
-        No lessons found for "{{ searchQuery || 'your search' }}".
+        "{{ searchQuery || "your search" }}" bo‘yicha natija topilmadi.
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ref, computed} from 'vue';
-import AppSearchInput from '~/components/app-search-input/AppSearchInput.vue';
-import {lessons} from '~/constants/lessons';
+import { ref, computed } from "vue";
+import AppSearchInput from "~/components/app-search-input/AppSearchInput.vue";
+import { lessons } from "~/constants/lessons";
 
 interface Lesson {
   title: string;
@@ -33,7 +38,7 @@ interface Lesson {
 }
 
 const route = useRoute();
-const searchQuery = ref<string>((route.query.search as string) || '');
+const searchQuery = ref<string>((route.query.search as string) || "");
 
 const filteredLessons = computed(() => {
   if (!searchQuery.value) {
@@ -41,7 +46,24 @@ const filteredLessons = computed(() => {
   }
   const query = searchQuery.value.toLowerCase().trim();
   return lessons.filter((lesson: Lesson) =>
-      lesson.title.toLowerCase().includes(query)
+    lesson.title.toLowerCase().includes(query)
   );
+});
+
+// 🟢 SEO metadata
+useSeoMeta({
+  title: "Dasturlash namunalarini o‘rganing — Lerax",
+  description:
+    "O‘zbek tilida dasturlash bo‘yicha namunalar: Go, JavaScript, Vue, React, PHP va boshqa texnologiyalarni amaliy misollar orqali o‘rganing.",
+  ogTitle: "Dasturlash darslari va misollar — Lerax",
+  ogDescription:
+    "Go, Vue, React, PHP, JavaScript kabi dasturlash tillarini o‘zbek tilida misollar orqali o‘rganing.",
+  ogUrl: "https://lerax.nolan.uz/examples",
+  ogImage: "https://lerax.nolan.uz/og/lerax-examples.png",
+  twitterCard: "summary_large_image",
+});
+
+useHead({
+  link: [{ rel: "canonical", href: "https://lerax.nolan.uz/examples" }],
 });
 </script>

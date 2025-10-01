@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import type {NuxtError} from '#app'
+import type { NuxtError } from '#app'
 const router = useRouter()
 
 const props = defineProps({
-  // eslint-disable-next-line vue/require-default-prop
   error: Object as () => NuxtError,
 })
 
@@ -14,16 +13,50 @@ const handleReload = () => {
 const handleGoBack = () => {
   router.back()
 }
+
+// 🟢 SEO meta for error pages
+const errorTitle = props.error?.statusCode === 404 
+  ? "Sahifa topilmadi | Lerax" 
+  : "Xatolik yuz berdi | Lerax"
+
+const errorDescription = props.error?.statusCode === 404 
+  ? "Siz izlagan sahifa mavjud emas. Lerax dasturlash darslarini qidiring." 
+  : "Saytda texnik nosozlik yuz berdi. Keyinroq urinib ko‘ring."
+
+useSeoMeta({
+  title: errorTitle,
+  description: errorDescription,
+  ogTitle: errorTitle,
+  ogDescription: errorDescription,
+  ogImage: 'https://lerax.nolan.uz/og/error.png',
+  twitterCard: 'summary',
+})
+
+useHead({
+  meta: [
+    // 🔴 Prevent indexing of error pages
+    { name: 'robots', content: 'noindex, nofollow' }
+  ]
+})
 </script>
 
 <template>
   <div class="my-container text-center h-screen flex items-center justify-center">
     <div class="space-y-4">
       <h1>{{ error?.statusCode }}</h1>
-      <p>{{ error?.statusCode === 404 ? "Yaxshiroq qidiring" : "Menimcha nimadir neto" }}</p>
+      <p>
+        {{ error?.statusCode === 404 
+          ? "Siz izlagan sahifa topilmadi. Yaxshiroq qidiring 🚀" 
+          : "Menimcha nimadir neto 😅" 
+        }}
+      </p>
       <div class="flex items-center justify-center gap-2">
-        <UButton icon="tabler:chevron-left" @click="handleGoBack" variant="soft">Uyingga bor!</UButton>
-        <UButton icon="tabler:reload" @click="handleReload">Qayta yuklash</UButton>
+        <UButton icon="tabler:chevron-left" @click="handleGoBack" variant="soft">
+          Uyingga bor!
+        </UButton>
+        <UButton icon="tabler:reload" @click="handleReload">
+          Qayta yuklash
+        </UButton>
       </div>
     </div>
   </div>
