@@ -113,17 +113,18 @@ a.link {
   @apply text-xl relative my-4 ps-4;
 }
 
+.my-section-tag:before {
+  content: "#";
+  @apply absolute top-0 left-0 text-primary rounded;
+}
+
+
 .my-md-content pre {
   @apply border-l-2 border-primary rounded-l-none p-2 my-4 bg-primary/10 rounded-xl whitespace-pre-wrap wrap-break-word;
 }
 
 .my-md-content p code {
   @apply bg-primary/10 px-1 rounded text-primary;
-}
-
-.my-section-tag:hover:before {
-  content: "#";
-  @apply absolute top-0 left-0 text-primary rounded;
 }
 
 /* list */
