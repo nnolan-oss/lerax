@@ -1,1 +1,1 @@
-## Lerax - dasturlashni examplelar bilan o'zbek tilida o'rganing
+## Lerax - dasturlashni o'zbek tilida examplelar bilan o'rganing
