@@ -1,44 +1,43 @@
----
-title: vuejs - lerax
+title: VueJS - lerax
 summary: Dasturlash tilini o'zbek tilida namunalar bilan o'rganish
 date: 2025-09-29
 ---
 
-## vuejs
+## VueJS
 
 <div class="my-md-content">
 
-[Nuxt](https://nuxt.com) yuqori sifatli full-stack web loyihalarni yaratish uchun ishlab chiqilgan Vue.js frameworki.  
-To'liq ma'lumot olish uchun [dokumentatsiya](https://nuxt.com/docs/4.x/getting-started/installation).
+[Vue](https://vuejs.org) foydalanuvchi interfeyslarini yaratish uchun mo'ljallangan progressiv JavaScript frameworki.  
+To'liq ma'lumot olish uchun [dokumentatsiya](https://vuejs.org/guide/introduction.html).
 
 <h3 class="my-section-tag">Mavzular</h3>
 
-- [Hello World](./vuejs/hello-world)
-- [API referencelar](./vuejs/api-references)
-- [Template sintaksis](./vuejs/template-syntax)
-- [Reactivity & state](./vuejs/reactivity-and-state)
-- [Computed properties](./vuejs/computed-properties)
-- [Class'lar va style](./vuejs/class-and-style)
-- [Shartli renderlash](./vuejs/conditional-rendering)
-- [List renderlash](./vuejs/list-rendering)
-- [Event handling](./vuejs/event-handling)
-- [Form bilan ishlash](./vuejs/form-input-bindings)
-- [Watchers](./vuejs/watchers)
-- [Template refs](./vuejs/template-refs)
-- [Components basics](./vuejs/components-basics)
-- [Lifecycle hooks](./vuejs/lifecycle-hooks)
-- [Composables (hooks)](./vuejs/composables)
-- [Routing](./vuejs/routing)
-- [Komponentlar](./vuejs/components)
-- [Built-in komponentlar](./vuejs/built-in-components)
-  - [Transitionlar](./vuejs/transitions)
-  - [KeepAlive](./vuejs/keep-alive)
-  - [Teleport](./vuejs/teleport)
-- [Plugins](./vuejs/plugins)
-- [Data fetching & api](./vuejs/data-fetching-and-api)
-- [State management](./vuejs/state-management)
-- [Configuration](./vuejs/configuration)
-- [Deployment](./vuejs/deployment)
-- [Testing](./vuejs/testing)
+- [Hello World](./hello-world)
+- [API referencelar](./api-references)
+- [Template sintaksis](./template-syntax)
+- [Reactivity & state](./reactivity-and-state)
+- [Computed properties](./computed-properties)
+- [Class'lar va style](./class-and-style)
+- [Shartli renderlash](./conditional-rendering)
+- [List renderlash](./list-rendering)
+- [Event handling](./event-handling)
+- [Form bilan ishlash](./form-input-bindings)
+- [Watchers](./watchers)
+- [Template refs](./template-refs)
+- [Components basics](./components-basics)
+- [Lifecycle hooks](./lifecycle-hooks)
+- [Composables (hooks)](./composables)
+- [Routing](./routing)
+- [Komponentlar](./components)
+- [Built-in komponentlar](./built-in-components)
+  - [Transitionlar](./transitions)
+  - [KeepAlive](./keep-alive)
+  - [Teleport](./teleport)
+- [Plugins](./plugins)
+- [Data fetching & api](./data-fetching-and-api)
+- [State management](./state-management)
+- [Configuration](./configuration)
+- [Deployment](./deployment)
+- [Testing](./testing)
 
 </div>
