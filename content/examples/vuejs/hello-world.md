@@ -12,6 +12,12 @@ Vue'ni syntax ko'proq HTMl structurega tortadi, blaki shu narsa uni backendchila
 
 Ok unda boshladik!
 
+
+```bash
+# Project yaratish
+npm create vue@latest
+```
+
 ```ts
 // Minimal Vue example
 import { createApp, ref } from "vue";
