@@ -30,9 +30,23 @@ export default defineNuxtConfig({
         { name: 'googlebot', content: 'notranslate' },
         { name: 'googlebot-news', content: 'notranslate' },
         { name: 'googlebot-news', content: 'notranslate' },
+        // Open Graph defaults
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'lerax' },
+        { property: 'og:title', content: 'lerax' },
+        { property: 'og:description', content: 'lerax' },
+        { property: 'og:image', content: '/images/android-chrome-512x512.png' },
+        { property: 'og:image:width', content: '512' },
+        { property: 'og:image:height', content: '512' },
+        // Twitter Card defaults
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: 'lerax' },
+        { name: 'twitter:description', content: 'lerax' },
+        { name: 'twitter:image', content: '/images/android-chrome-512x512.png' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'image_src', href: '/images/android-chrome-512x512.png' },
       ],
     }
   },
