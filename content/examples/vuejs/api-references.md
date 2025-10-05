@@ -43,7 +43,7 @@ export default {
 
 ```vue
 <!-- Composition API -->
-<script setup>
+<script setup> // setup huddi Options API dagi setup() 
 import { ref, onMounted } from "vue";
 
 // reactive state
