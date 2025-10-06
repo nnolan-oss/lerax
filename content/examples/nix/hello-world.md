@@ -9,6 +9,9 @@ date: 2025-10-01
 <div class="my-md-content">
 
 Nix — bu ishonchli va takrorlanadigan paketlarni boshqarish uchun moʻljallangan kuchli vosita (package manager), asosan Linux va boshqa Unix (masalan macOS)tizimlarida ishlatiladi. U paketlarni izolyatsiyada quradi, yaʼni bir paketni oʻrnatish yoki yangilash boshqalarni buzmaydi, versiyalarni orqaga qaytarish mumkin va `dependency hell` muammosini hal qiladi. Nix oʻziga xos deklarativ va sof funksional tilga asoslangan boʻlib, paketlar `/nix/store` da hash orqali saqlanadi, bu esa takrorlanuvchanlikni taʼminlaydi.
+<br/><br/>
+
+Qishloqcha qilib aytganda, oddiy misol projectizda bittasida nodejs v18 yana birida v22 turgan bo'lsa, siz katta extimol bilan fnm yoki nvm kabi version manager ishlatsangiz kerak, bunda bir projectdan boshqasiga o'tsangiz `nvm use v18` yoki v22 qilib version almashtirasiz va to'liq device shu node version ni ishlatadi, nixni mantig'i shuni to'liq deviceda emas, izolatsiyalarngan qobiqda versiyani almashtirib ishlatish, bunda bu almashtirigan package version boshqa projectlarga hech qachon ta'sir qilmaydi.
 
 NixOS bu to'liq nix tili asosida configuration qilinadigan Linux distributive.
 
@@ -17,7 +20,7 @@ NixOS bu to'liq nix tili asosida configuration qilinadigan Linux distributive.
 - Orqaga qaytarish: Tizim yangilanishlari yoki oʻzgarishlarini osongina qaytarish mumkin.
 - Nixpkgs: 120 000+ paketlardan iborat katta repozitoriyga ega.
 
-Biz bu qo'llanmada asosan nix package manageri bilan ishlaymiz
+Biz bu qo'llanmada asosan nix package manageri bilan ishlaymiz.
 
 ```bash
 # Nix package managerni o'rnatish macOS

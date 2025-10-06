@@ -4,7 +4,7 @@ summary: Dasturlash tilini o'zbek tilida namunalar bilan o'rganish
 date: 2025-10-01
 ---
 
-## Nix cook!
+## Let's Nix cook!
 
 <div class="my-md-content">
 
@@ -14,8 +14,7 @@ To'liq ma'lumot olish uchun <a class="link" href="https://nix.dev/tutorials/firs
 <h3 class="my-section-tag">Mavzular</h3>
 
 - [Hello World](./nix/hello-world)
-- [Nix package manager](./nix/package-manager)
-- [nix-env](./nix/nix-env)
+- [nix-env (nix profile)](./nix/nix-env)
 - [nix-shell](./nix/nix-shell)
 
 - [Nix skriptlash](./nix/scripting)
