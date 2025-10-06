@@ -14,8 +14,8 @@
           :to="lesson.link"
           class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
         >
-          <UIcon :name="lesson.icon" class="text-3xl" />
-          <h2 class="font-bold text-lg">{{ lesson.title }}</h2>
+          <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
+          <h3 class="font-bold text-lg">{{ lesson.title }}</h3>
         </NuxtLink>
       </div>
 
