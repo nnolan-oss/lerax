@@ -21,7 +21,7 @@
             :href="lesson.link"
             class="hover:text-primary backdrop-blur bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
           >
-            <UIcon :name="lesson.icon" class="text-3xl stroke-1" />
+            <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
             <h3 class="font-bold">{{ lesson.title }}</h3>
           </NuxtLink>
         </template>
