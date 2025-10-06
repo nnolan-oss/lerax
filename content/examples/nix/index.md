@@ -4,12 +4,12 @@ summary: Dasturlash tilini o'zbek tilida namunalar bilan o'rganish
 date: 2025-10-01
 ---
 
-## Nix
+## Nix cook!
 
 <div class="my-md-content">
 
-[Nix](https://nixos.org) — declarative va reproducible development muhiti yaratish uchun ishlab chiqilgan package manager.  
-To'liq ma'lumot olish uchun [dokumentatsiya](https://nixos.org/learn.html).
+<a class="link" href="https://nix.dev/">Nix</a> — declarative va reproducible development muhiti yaratish uchun ishlab chiqilgan package manager.  
+To'liq ma'lumot olish uchun <a class="link" href="https://nix.dev/tutorials/first-steps/">dokumentatsiya</a>.
 
 <h3 class="my-section-tag">Mavzular</h3>
 
