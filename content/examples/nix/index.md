@@ -17,12 +17,13 @@ To'liq ma'lumot olish uchun <a class="link" href="https://nix.dev/tutorials/firs
 - [nix-env (nix profile)](./nix/nix-env)
 - [nix-shell](./nix/nix-shell)
 
-- [Nix skriptlash](./nix/scripting)
+- Nix skriptlash
   - [O'zgaruvchilar](./nix/variables)
   - [Ma'lumot turlari](./nix/data-types)
   - [If/else](./nix/if-else)
   - [Switch](./nix/switch)
   - [Funksiyalar](./nix/functions)
+  - [Builtins](./nix/builtins)
   - [Modullar](./nix/modules)
   - [Import/export](./nix/import-export)
   - [Inheritance (me'ros olish)](./nix/inheritance)
