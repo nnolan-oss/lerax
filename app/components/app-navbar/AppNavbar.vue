@@ -12,6 +12,8 @@
         <UButton href="/examples">Examples</UButton>
         <ToggleMode />
         <UButton
+          target="_blank"
+          href="https://github.com/nnolan-oss/lerax"
           icon="tabler:brand-github"
           size="md"
           color="primary"
