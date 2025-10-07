@@ -16,7 +16,6 @@ To'liq ma'lumot olish uchun <a class="link" href="https://nix.dev/tutorials/firs
 - [Hello World](./nix/hello-world)
 - [nix-env (nix profile)](./nix/nix-env)
 - [nix-shell](./nix/nix-shell)
-
 - Nix skriptlash
   - [O'zgaruvchilar](./nix/variables)
   - [Ma'lumot turlari](./nix/data-types)
@@ -31,27 +30,21 @@ To'liq ma'lumot olish uchun <a class="link" href="https://nix.dev/tutorials/firs
   - [Overlays & package override](./nix/overlays)
   - [Packagelarni localda build qilish](./nix/local-build)
   - [Custom package yozish](./nix/custom-package)
-
 - [Flakes](./nix/flakes)
 - [Outputs & inputs](./nix/outputs-inputs)
 - [nix develop & nix run](./nix/develop-run)
 - [DevShell yaratish](./nix/devshell)
-
 - [direnv & nix-direnv](./nix/direnv)
 - [Language-specific dev environment](./nix/lang-env)
-
-- [NixOS](./nixos/intro)
+- NixOS
   - [Declarative konfiguratsiya](./nixos/declarative-config)
   - [configuration.nix & hardware-configuration.nix](./nixos/config-files)
   - [home-manager](./nixos/home-manager)
   - [System rebuild va rollback](./nixos/rebuild-rollback)
-
-- [Advanced Topics](./nix/advanced)
   - [Cachix va binary cache](./nix/cachix)
   - [CI/CD da Nix ishlatish](./nix/ci-cd)
   - [Reproducible build’lar](./nix/reproducible-builds)
   - [Multi-user va remote build’lar](./nix/multi-user-remote)
-
 - [Resurslar](./nix/resources)
 
 </div>
