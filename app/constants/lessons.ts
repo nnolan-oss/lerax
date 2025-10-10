@@ -2,6 +2,7 @@ export const lessons = [
   { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang" },
   { title: "NuxtJS", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
   { title: "nix", icon: "tabler:snowflake", link: "/examples/nix" },
+  { title: "Python", icon: "tabler:brand-python", link: "/examples/python" },
   { title: "NestJS", icon: "tabler:brand-nest", link: "/examples/nestjs" },
   { title: "TypeScript", icon: "tabler:brand-typescript", link: "/examples/typescript" },
   { title: "Vue", icon: "tabler:brand-vue", link: "/examples/vuejs" },
@@ -15,4 +16,3 @@ export const lessons = [
   { title: "Telegram Bot", icon: "tabler:brand-telegram", link: "/examples/telegram-bot" },
   { title: "React Native", icon: "tabler:brand-react-native", link: "/examples/react-native" },
 ] as const;
-
