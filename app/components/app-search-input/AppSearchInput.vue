@@ -1,15 +1,15 @@
 <template>
-    <UInput
-        v-model="searchValue"
-        @input="handleSearch"
-        placeholder="Qidiruv..."
-        icon="tabler:search"
-        class="min-w-[80%] my-4"
-    />
+  <UInput
+      v-model="searchValue"
+      @input="handleSearch"
+      placeholder="Qidiruv..."
+      icon="tabler:search"
+      class="min-w-[80%] my-4"
+  />
 </template>
 
 <script setup lang="ts">
-import { useDebounceFn } from "@vueuse/core";
+import {useDebounceFn} from "@vueuse/core";
 
 const route = useRoute();
 const router = useRouter();
