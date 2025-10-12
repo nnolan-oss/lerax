@@ -8,7 +8,7 @@ date: 2025-10-05
 
 <div class="my-md-content">
 
-<h4 class="my-section-tag">v-if</h3>
+<h3 class="my-section-tag">v-if</h3>
 
 ```vue
 <h1 v-if="isLoading">Yuklanmoqda...</h1>
@@ -32,7 +32,7 @@ agar `isLoading` true qiymat bo'lsagina render bo'ladi
 </div>
 ```
 
-<h4 class="my-section-tag">v-show</h3>
+<h3 class="my-section-tag">v-show</h3>
 
 ```vue
 <h1 v-show="isShow">Yuklanmoqda...</h1>
