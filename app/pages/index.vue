@@ -18,7 +18,7 @@
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
             v-if="lesson.link"
-            :href="lesson.link"
+            :to="lesson.link"
             class="hover:text-primary backdrop-blur bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
           >
             <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
