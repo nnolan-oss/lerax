@@ -4,6 +4,7 @@
     <Goback/>
     <slot />
     <AppFooter />
+    <ScrollToTop />
   </div>
 </template>
 
