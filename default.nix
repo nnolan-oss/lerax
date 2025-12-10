@@ -23,7 +23,7 @@ in
     version = manifest.version or "1.0.0";
 
     src = ./.;
-    npmDepsHash = ""; # Will need to be updated after first build
+    npmDepsHash = "sha256-bFddl29Nbm2U5De49yj3T9IgBhyGfNSydHxoh/JQhzQ=";
 
     buildPhase = ''
       runHook preBuild
