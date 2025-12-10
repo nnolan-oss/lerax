@@ -13,7 +13,7 @@ in {
   options = with lib; {
     services.lerax = {
       enable = mkEnableOption ''
-        lerax (Lerax) website server.
+        lerax website server.
       '';
 
       proxy = {
@@ -151,7 +151,7 @@ in {
 
       services.nginx.virtualHosts =
         lib.mkIf (cfg.proxy.enable)
-        (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specicy it properly!" {
+        (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specify it properly!" {
           "${cfg.proxy.domain}" = {
             addSSL = true;
             enableACME = true;
