@@ -158,6 +158,10 @@ in {
             locations."/" = {
               proxyPass = "http://${cfg.host}:${toString cfg.port}";
               proxyWebsockets = true;
+              
+              extraConfig = ''
+                try_files $uri $uri/ /index.html;
+              '';
             };
           };
         });
