@@ -150,24 +150,38 @@ in {
       };
 
       services.nginx.virtualHosts =
-        lib.mkIf (cfg.proxy.enable)
-        (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specify it properly!" {
-          "${cfg.proxy.domain}" = {
-            addSSL = true;
-            enableACME = true;
-            locations."/" = {
-              proxyPass = "http://${cfg.host}:${toString cfg.port}";
-              proxyWebsockets = true;
-            };
-            locations."/_nuxt/" = {
-              proxyPass = "http://${cfg.host}:${toString cfg.port}/_nuxt/";
-              proxyWebsockets = true;
-            };
+  lib.mkIf (cfg.proxy.enable)
+  (lib.debug.traceIf (builtins.isNull cfg.proxy.domain) "proxy.domain can't be null, please specify it properly!" {
+    "${cfg.proxy.domain}" = {
+      addSSL = true;
+      enableACME = true;
 
-            locations."/public/" = {
-              proxyPass = "http://${cfg.host}:${toString cfg.port}/public/";
-            };
-          };
-        });
+      # Proxy root URL to Nuxt server
+      locations."/" = {
+        proxyPass = "http://${cfg.host}:${toString cfg.port}";
+        proxyWebsockets = true;
+
+        # Optional: fallback to index.html for SPA routing
+        extraConfig = ''
+          try_files $uri $uri/ /index.html;
+        '';
+      };
+
+      # Proxy Nuxt client bundle (_nuxt) for CSS/JS
+      locations."/_nuxt/" = {
+        proxyPass = "http://${cfg.host}:${toString cfg.port}/_nuxt/";
+        proxyWebsockets = true;
+      };
+
+      # Proxy public assets
+      locations."/public/" = {
+        proxyPass = "http://${cfg.host}:${toString cfg.port}/public/";
+      };
+
+      # Optional: other static folders (if any)
+      # locations."/assets/" = { ... };
+    };
+  });
+
     };
 }
