@@ -35,7 +35,7 @@
         {
           formatter = pkgs.nixfmt-tree;
           packages.default = pkgs.callPackage ./. {};
-          packages.lerax = self'.packages.default;
+          # packages.lerax = self'.packages.default;
           devShells.default = import ./shell.nix {inherit pkgs;};
         };
 
