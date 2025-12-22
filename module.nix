@@ -159,6 +159,14 @@ in {
               proxyPass = "http://${cfg.host}:${toString cfg.port}";
               proxyWebsockets = true;
             };
+            locations."/_nuxt/" = {
+              proxyPass = "http://${cfg.host}:${toString cfg.port}/_nuxt/";
+              proxyWebsockets = true;
+            };
+
+            locations."/public/" = {
+              proxyPass = "http://${cfg.host}:${toString cfg.port}/public/";
+            };
           };
         });
     };
