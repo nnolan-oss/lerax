@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Agar real fayl bo‘lsa – o‘sha faylni och
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Aks holda hammasini index.html ga yubor
+  RewriteRule ^ index.html [L]
+</IfModule>

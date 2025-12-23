@@ -177,9 +177,6 @@ in {
       locations."/public/" = {
         proxyPass = "http://${cfg.host}:${toString cfg.port}/public/";
       };
-
-      # Optional: other static folders (if any)
-      # locations."/assets/" = { ... };
     };
   });
 
