@@ -2,7 +2,7 @@ export const lessons = [
   { title: "Go", icon: "tabler:brand-golang", link: "/examples/golang" },
   { title: "NuxtJS", icon: "tabler:brand-nuxt", link: "/examples/nuxtjs" },
   { title: "nix", icon: "tabler:snowflake", link: "/examples/nix" },
-  { title: "NestJS", icon: "tabler:brand-nest", link: "/examples/nestjs" },
+  { title: "NestJS", icon: "tabler:paw", link: "/examples/nestjs" },
   { title: "TypeScript", icon: "tabler:brand-typescript", link: "/examples/typescript" },
   { title: "Vue", icon: "tabler:brand-vue", link: "/examples/vuejs" },
   { title: "JavaScript", icon: "tabler:brand-javascript", link: "/examples/javascript" },
