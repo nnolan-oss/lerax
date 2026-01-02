@@ -24,6 +24,8 @@ in
 
     src = ./.;
     npmDepsHash = "sha256-VKkK1M8sl2/fBf0+/UqCKUDHc/rSp3QbFLHNjeYTDwE=";
+    makeCacheWritable = true;
+    npmFlags = [ "--legacy-peer-deps" ];
 
     # Rebuild native dependencies in build phase where we have write access
     preBuild = ''
