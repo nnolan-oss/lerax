@@ -13,12 +13,13 @@
 
     <!-- Lessons Section -->
     <div class="my-section-wrapper">
-      <h5 class="font-semibold">· Sizni kutyapti</h5>
+      <h2 class="font-semibold">· Sizni kutyapti</h2>
       <div class="grid grid-cols-2 gap-5 mt-4">
         <template v-for="lesson in lessons" :key="lesson.title">
           <NuxtLink
             v-if="lesson.link"
             :to="lesson.link"
+            :aria-label="`${lesson.title} darslarini ko'rish`"
             class="hover:text-primary backdrop-blur bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
           >
             <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />

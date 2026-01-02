@@ -12,6 +12,7 @@
           v-for="lesson in filteredLessons"
           :key="lesson.title"
           :to="lesson.link"
+          :aria-label="`${lesson.title} darslarini ko'rish`"
           class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
         >
           <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />

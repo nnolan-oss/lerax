@@ -1,0 +1,25 @@
+{
+  "name": "Lerax — O'zbekcha dasturlash darslari",
+  "short_name": "Lerax",
+  "description": "Dasturlashni o'zbek tilida namunalar bilan o'rganing",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f7f6",
+  "theme_color": "#00a8e8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

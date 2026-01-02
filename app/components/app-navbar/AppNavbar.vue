@@ -3,7 +3,7 @@
     class="border-b border-b-primary-500/10 sticky top-0 backdrop-blur-lg bg-opacity-50 z-50"
   >
     <div class="my-container flex justify-between items-center">
-      <NuxtLink href="/" class="font-bold font-mono">
+      <NuxtLink href="/" class="font-bold font-mono" aria-label="Lerax bosh sahifasi">
         <span class="text-primary">{</span>
         lerax
         <span class="text-primary">}</span>
@@ -18,6 +18,7 @@
           size="md"
           color="primary"
           variant="soft"
+          aria-label="GitHub repositoryni ochish"
         />
       </div>
     </div>

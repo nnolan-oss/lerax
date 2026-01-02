@@ -2,7 +2,9 @@
   <div>
     <AppNavbar />
     <Goback/>
-    <slot />
+    <main>
+      <slot />
+    </main>
     <AppFooter />
     <ScrollToTop />
   </div>

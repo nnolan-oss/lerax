@@ -3,7 +3,7 @@
     <div class="my-container flex items-center justify-between">
       <span class="text-sm">
         {{ date.getFullYear() }} · by
-        <a href="https://nolan.uz" class="underline" target="_blank">nnolan</a>
+        <a href="https://nolan.uz" class="underline" target="_blank" aria-label="nnolan veb-sayti">nnolan</a>
       </span>
 
       <div class="flex items-center gap-2">

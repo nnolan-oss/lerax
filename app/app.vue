@@ -30,6 +30,9 @@ useSeoMeta({
 });
 
 useHead({
+  htmlAttrs: {
+    lang: "uz",
+  },
   link: [
     // 🔹 Canonical URL
     { rel: "canonical", href: "https://lerax.nolan.uz" },
