@@ -23,7 +23,7 @@ in
     version = manifest.version or "1.0.0";
 
     src = ./.;
-    npmDepsHash = "sha256-YuQ9UJZWV93emi5Q+M6DTN0wlyWaYUTETvPt85quGMs=";
+    npmDepsHash = pkgs.lib.fakeHash;
 
     # Rebuild native dependencies in build phase where we have write access
     preBuild = ''
