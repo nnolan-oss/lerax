@@ -163,7 +163,6 @@ in {
 
         # Optional: fallback to index.html for SPA routing
         extraConfig = ''
-          try_files $uri $uri/ /index.html;
         '';
       };
 
