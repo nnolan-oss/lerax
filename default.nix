@@ -23,7 +23,7 @@ in
     version = manifest.version or "1.0.0";
 
     src = ./.;
-    npmDepsHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    npmDepsHash = "sha256-X9eI3DFf3SRGubeqNtzOS4KvgSMDl3u2K2DWzwWQQ3U=";
     makeCacheWritable = true;
     npmFlags = [ "--legacy-peer-deps" ];
 
