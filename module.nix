@@ -156,26 +156,11 @@ in {
       addSSL = true;
       enableACME = true;
 
-      # Proxy root URL to Nuxt server
+      # Proxy all requests to the Nuxt SSR server.
+      # Nitro handles routing internally — no try_files needed.
       locations."/" = {
         proxyPass = "http://${cfg.host}:${toString cfg.port}";
         proxyWebsockets = true;
-
-        # Optional: fallback to index.html for SPA routing
-        extraConfig = ''
-          try_files $uri $uri/ /index.html;
-        '';
-      };
-
-      # Proxy Nuxt client bundle (_nuxt) for CSS/JS
-      locations."/_nuxt/" = {
-        proxyPass = "http://${cfg.host}:${toString cfg.port}/_nuxt/";
-        proxyWebsockets = true;
-      };
-
-      # Proxy public assets
-      locations."/public/" = {
-        proxyPass = "http://${cfg.host}:${toString cfg.port}/public/";
       };
     };
   });

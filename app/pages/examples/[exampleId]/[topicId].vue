@@ -1,24 +1,8 @@
 <script setup>
-const route = useRoute();
-const exampleId = route.params?.exampleId;
-const topicId = route.params?.topicId;
+const { params } = useRoute();
+const post = await useExampleContent(`${params.exampleId}/${params.topicId}`);
 
-const { data: post } = await useAsyncData(
-  `examples-${exampleId}-${topicId}`,
-  () =>
-    queryCollection("examples")
-      .path(`/examples/${exampleId}/${topicId}`)
-      .first()
-);
-
-if (!post?.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: "Page Not Found",
-  });
-}
-
-const { title, summary, date } = post.value;
+const { title, summary } = post.value;
 
 useSeoMeta({
   title: `${title} - Lerax`,

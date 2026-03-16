@@ -31,7 +31,6 @@ export default defineNuxtConfig({
         { name: "google", content: "notranslate" },
         { name: "googlebot", content: "notranslate" },
         { name: "googlebot-news", content: "notranslate" },
-        { name: "googlebot-news", content: "notranslate" },
         // Open Graph defaults
         { property: "og:type", content: "website" },
         { property: "og:site_name", content: "lerax" },
