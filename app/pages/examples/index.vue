@@ -1,41 +1,34 @@
 <template>
   <div class="my-container">
     <div class="my-section-wrapper text-center">
-      <h1 class="text-2xl font-bold mb-4">Dasturlash namunalarini o‘rganing</h1>
+      <h1 class="font-bold mb-4">Dasturlash namunalarini o’rganing</h1>
       <AppSearchInput v-model="searchQuery" placeholder="Qidiruv..." />
 
       <div
         v-if="filteredLessons.length > 0"
-        class="grid grid-cols-2 gap-5 mt-4"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-4"
       >
         <NuxtLink
           v-for="lesson in filteredLessons"
           :key="lesson.title"
           :to="lesson.link"
-          :aria-label="`${lesson.title} darslarini ko'rish`"
-          class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
+          :aria-label="`${lesson.title} darslarini ko’rish`"
+          class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
         >
           <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
-          <h3 class="font-bold text-lg">{{ lesson.title }}</h3>
+          <h3 class="font-bold">{{ lesson.title }}</h3>
         </NuxtLink>
       </div>
 
       <div v-else class="mt-4 text-gray-500">
-        "{{ searchQuery || "your search" }}" bo‘yicha natija topilmadi.
+        "{{ searchQuery }}" bo’yicha natija topilmadi.
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import AppSearchInput from "~/components/app-search-input/AppSearchInput.vue";
 import { lessons } from "~/constants/lessons";
-
-interface Lesson {
-  title: string;
-  link: string;
-  icon: string;
-}
 
 const route = useRoute();
 const searchQuery = ref<string>((route.query.search as string) || "");
@@ -45,8 +38,8 @@ const filteredLessons = computed(() => {
     return lessons;
   }
   const query = searchQuery.value.toLowerCase().trim();
-  return lessons.filter((lesson: Lesson) =>
-    lesson.title.toLowerCase().includes(query)
+  return lessons.filter((lesson) =>
+    lesson.title.toLowerCase().includes(query),
   );
 });
 

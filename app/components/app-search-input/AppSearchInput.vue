@@ -1,37 +1,41 @@
 <template>
   <UInput
-      v-model="searchValue"
-      @input="handleSearch"
-      placeholder="Qidiruv..."
-      icon="tabler:search"
-      class="min-w-[80%] my-4"
+    :model-value="modelValue"
+    @update:model-value="onInput"
+    placeholder="Qidiruv..."
+    icon="tabler:search"
+    class="min-w-[80%] my-4"
   />
 </template>
 
 <script setup lang="ts">
-import {useDebounceFn} from "@vueuse/core";
+import { useDebounceFn } from '@vueuse/core'
 
-const route = useRoute();
-const router = useRouter();
+const props = defineProps<{
+  modelValue: string
+  placeholder?: string
+}>()
 
-const searchValue = ref(route.query.search as string | undefined)
+const emit = defineEmits<{
+  'update:modelValue': [value: string]
+}>()
 
-watch(() => route.query.search, (newVal) => {
-  searchValue.value = newVal as string | undefined
-})
+const route = useRoute()
+const router = useRouter()
 
-const updateQuery = () => {
+const updateQuery = (value: string) => {
   router.replace({
     query: {
       ...route.query,
-      search: searchValue.value || undefined
-    }
+      search: value || undefined,
+    },
   })
 }
 
-const handleSearch = useDebounceFn(updateQuery, 400)
+const debouncedUpdateQuery = useDebounceFn(updateQuery, 400)
+
+const onInput = (value: string) => {
+  emit('update:modelValue', value)
+  debouncedUpdateQuery(value)
+}
 </script>
-
-<style scoped>
-
-</style>

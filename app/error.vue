@@ -51,10 +51,10 @@ useHead({
         }}
       </p>
       <div class="flex items-center justify-center gap-2">
-        <UButton icon="tabler:chevron-left" @click="handleGoBack" variant="soft">
+        <UButton icon="tabler:chevron-left" variant="soft" @click="handleGoBack">
           Uyingga bor!
         </UButton>
-        <UButton icon="tabler:reload" @click="handleReload">
+        <UButton icon="tabler:reload" variant="solid" @click="handleReload">
           Qayta yuklash
         </UButton>
       </div>

@@ -120,19 +120,39 @@ a.link {
 
 
 .my-md-content pre {
-  @apply border-l-2 border-primary rounded-l-none p-2 my-4 bg-primary/10 rounded-xl whitespace-pre-wrap wrap-break-word;
+  @apply border-l-2 border-primary rounded-l-none p-3 my-4 bg-primary/10 rounded-xl whitespace-pre-wrap wrap-break-word text-sm overflow-x-auto;
 }
 
-.my-md-content p code {
-  @apply bg-primary/10 px-1 rounded text-primary;
+.my-md-content pre code {
+  @apply text-sm leading-relaxed;
+}
+
+.my-md-content p code,
+.my-md-content li code,
+.my-md-content h2 code,
+.my-md-content h3 code {
+  @apply bg-primary/10 px-1.5 py-0.5 rounded text-primary text-sm;
+}
+
+.my-md-content p a,
+.my-md-content a.link {
+  @apply underline decoration-primary hover:decoration-2 hover:text-primary;
 }
 
 .my-md-content ul li a {
-  @apply list-disc marker:text-primary hover:text-primary
+  @apply hover:text-primary;
 }
 
 .my-md-content ul li {
-  @apply list-disc marker:text-primary
+  @apply list-disc marker:text-primary;
+}
+
+.my-md-content h2 {
+  @apply mt-6 mb-3;
+}
+
+.my-md-content h3 {
+  @apply mt-4 mb-2;
 }
 
 /* list */

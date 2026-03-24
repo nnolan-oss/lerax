@@ -16,6 +16,8 @@ useSeoMeta({
 
 <template>
   <div class="my-container">
-    <ContentRenderer v-if="post" :value="post" />
+    <div v-if="post" class="my-md-content">
+      <ContentRenderer :value="post" />
+    </div>
   </div>
 </template>

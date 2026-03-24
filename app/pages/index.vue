@@ -14,18 +14,17 @@
     <!-- Lessons Section -->
     <div class="my-section-wrapper">
       <h2 class="font-semibold">· Sizni kutyapti</h2>
-      <div class="grid grid-cols-2 gap-5 mt-4">
-        <template v-for="lesson in lessons" :key="lesson.title">
-          <NuxtLink
-            v-if="lesson.link"
-            :to="lesson.link"
-            :aria-label="`${lesson.title} darslarini ko'rish`"
-            class="hover:text-primary backdrop-blur bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2"
-          >
-            <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
-            <h3 class="font-bold">{{ lesson.title }}</h3>
-          </NuxtLink>
-        </template>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-4">
+        <NuxtLink
+          v-for="lesson in lessons"
+          :key="lesson.title"
+          :to="lesson.link"
+          :aria-label="`${lesson.title} darslarini ko'rish`"
+          class="hover:text-primary bg-primary-500/10 p-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
+        >
+          <UIcon :name="lesson.icon" class="text-xl md:text-3xl stroke-1" />
+          <h3 class="font-bold">{{ lesson.title }}</h3>
+        </NuxtLink>
       </div>
     </div>
   </div>
