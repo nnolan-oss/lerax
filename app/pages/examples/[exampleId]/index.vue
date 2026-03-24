@@ -1,6 +1,7 @@
 <script setup>
 const { params } = useRoute();
 const post = await useExampleContent(params.exampleId);
+const isNix = params.exampleId === "nix";
 
 const { title, summary } = post.value;
 
@@ -19,5 +20,6 @@ useSeoMeta({
     <div v-if="post" class="my-md-content">
       <ContentRenderer :value="post" />
     </div>
+    <NixRunner v-if="isNix" />
   </div>
 </template>
