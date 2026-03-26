@@ -88,5 +88,12 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      ddApplicationId: process.env.NUXT_PUBLIC_DD_APPLICATION_ID || "",
+      ddClientToken: process.env.NUXT_PUBLIC_DD_CLIENT_TOKEN || "",
+    },
+  },
+
   modules: ["@nuxt/content", "@nuxt/eslint", "@nuxt/image", "@nuxt/ui"],
 });
